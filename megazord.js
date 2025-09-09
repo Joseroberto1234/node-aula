@@ -19,14 +19,14 @@ const valor2 = argumentos["b"]
 // Usando a funcao soma, do módulo interno
 const resultado = meuModulo.soma(valor1,valor2)
 
-
+// Cria arquivo, e coloca o texto com o resultado da soma lá
 fs.writeFile("resultado.txt", resultado, "utf8", (erro, dados)=> {
     if(erro){
             console.log(erro)
         }
         else{
             console.log(dados);
-            log("Conta realizada")
+            console.log("Conta realizada")
         }
    } )
 
